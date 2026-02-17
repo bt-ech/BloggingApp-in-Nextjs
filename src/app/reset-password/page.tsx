@@ -16,7 +16,9 @@ function SubmitButton() {
     );
 }
 
-export default function ResetPasswordPage() {
+import { Suspense } from 'react';
+
+function ResetPasswordForm() {
     const searchParams = useSearchParams();
     const token = searchParams.get('token');
     const [state, dispatch] = useActionState(resetPassword, undefined);
@@ -68,5 +70,13 @@ export default function ResetPasswordPage() {
                 </form>
             </div>
         </div>
+    );
+}
+
+export default function ResetPasswordPage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <ResetPasswordForm />
+        </Suspense>
     );
 }
