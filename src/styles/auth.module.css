@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 1rem;
+}
+
+.formCard {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--card-border);
+  width: 100%;
+  max-width: 400px;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--foreground);
+  letter-spacing: -0.025em;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  color: var(--foreground);
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  /* Indigo-ish shadow */
+  background-color: var(--card-bg);
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.linkText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}

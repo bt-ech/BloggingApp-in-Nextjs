@@ -1,0 +1,147 @@
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.article {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linkedinLink {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkedinLink:hover {
+    text-decoration: underline;
+}
+
+.content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #374151;
+    white-space: pre-wrap;
+    /* Preserve line breaks */
+}
+
+.actions {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.deleteButton {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.deleteButton:hover {
+    background-color: #dc2626;
+}
+
+.commentsSection {
+    margin-top: 3rem;
+}
+
+.commentList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.commentCard {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.commentDate {
+    color: #9ca3af;
+}
+
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.commentInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.commentInput:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}

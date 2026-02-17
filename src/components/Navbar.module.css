@@ -1,0 +1,81 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--card-border);
+    padding: 1rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: rgba(15, 23, 42, 0.8);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.05em;
+    transition: color 0.2s;
+}
+
+.logo:hover {
+    color: var(--primary-hover);
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.link {
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.active {
+    color: var(--primary);
+    opacity: 1;
+    font-weight: 600;
+}
+
+.button {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--danger);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.button:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
